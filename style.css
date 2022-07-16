@@ -42,6 +42,36 @@ img {
     width: 100%;
 }
 
+#tab-1-content .contained {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#tab-5-content .contained {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#tab-7-content .contained {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial;
+    font-size: 47px;
+    color: white;
+}
+
+
+
 .showcase {
     width: 100%;
     height: 93vh;
@@ -160,7 +190,9 @@ img {
 #tab-3-content,
 #tab-4-content,
 #tab-5-content,
-#tab-6-content {
+#tab-6-content,
+#tab-7-content,
+#tab-8-content {
     display: none;
     opacity: 0;
 }
@@ -275,6 +307,39 @@ img {
     grid-gap: 2rem;
     text-align: center;
 }
+
+#tab-7-content .tab-7-content-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#tab-7-content .tab-7-content-bottom {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    text-align: center;
+}
+
+#tab-8-content .tab-8-content-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#tab-8-content .tab-8-content-bottom {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    text-align: center;
+}
+
 
 .table {
     width: 100%;
@@ -524,7 +589,7 @@ img {
 }
 
 .second-a:hover {
-    color: red;
+    /*color: red; */
     background-color: transparent;
     text-decoration: underline;
 }
@@ -547,6 +612,10 @@ img {
     width: 200px;
     height: 200px;
     margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .tab-6-1:hover {
