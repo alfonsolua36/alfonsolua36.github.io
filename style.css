@@ -642,41 +642,12 @@ img {
     margin: 0 auto;
 }
 
-.faq-element {
-    background-color: #333;
-    margin-top: .5rem;
-}
-
-.faq-element:hover {
-    cursor: pointer;
-}
-
-.faq-title h1 {
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin: 1.27rem 2rem;
-    display: inline-block;
-}
-
-.faq-title img {
-    float: right;
-    width: 1.5rem;
-    margin: 1.5rem;
-}
-
-
-
-
-
-
-
 
 @media (max-width: 950px) {
 
     .section-wrapper {
         padding: 4.4rem 0;
     }
-
 
     .form-wrapper form {
         display: flex;
@@ -689,30 +660,6 @@ img {
         align-items: center;
     }
 
-    #faq-wrapper-content {
-        width: 94%;
-        min-width: 370px;
-    }
-
-    #faq-wrapper-content {
-        width: 95%;
-    }
-
-    #faq-wrapper>h1 {
-        font-size: 2.5rem;
-        padding: 0 0 1rem
-    }
-
-    .faq-title h1 {
-        font-size: 1.2rem;
-        margin: 1rem 1.5rem;
-    }
-
-    .faq-title img {
-        width: 1.2rem;
-        margin: 1rem 1.2rem;
-    }
-
 }
 
 @media (max-width: 550px) {
@@ -720,53 +667,81 @@ img {
         padding: 3rem 0;
     }
 
-    .email {
-        width: 90%;
-        max-height: 2.7rem;
-        font-size: .9rem;
-    }
-
-    #faq-wrapper {
-        padding: 0;
-    }
-
-    #faq-wrapper>h1 {
-        font-size: 1.7rem;
-    }
-
-
     .section-center-wrapper {
         padding: 0 2rem;
     }
-
-    #faq-wrapper-content {
-        width: 100%;
-    }
-
-    .faq-title {
-        font-size: 1.1rem;
-    }
-
-    .faq-title h1 {
-        margin: .85rem 1.5rem
-    }
-
-
 }
 
+/* faq content */
 
-@media (max-width: 350px) {
-    #faq-wrapper-content {
-        min-width: 350px;
-    }
+.qna {
+    max-width: 500px;
+    margin: 0 auto;
+}
 
-    .faq-title h1 {
-        margin: .8rem 0 .8rem 1.5rem;
-    }
+/* Button default resets */
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
 
-    #faq-title img {
-        margin: 1rem 1.2rem 1rem 0;
-    }
+/* Styling the accordion buttons */
+.accordion {
+    width: 150%;
+    background-color: #303030;
+    color: #fff;
+    font-size: 20px;
+    padding: 18px 20px;
+    margin-bottom: 1px;
+    text-align: center;
+    /* center text */
+    transform: translate(-16%);
+    /*  To push the plus sign to the right  */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* adding the "plus" sign (+) */
+.accordion::after {
+    content: '\02795';
+    font-size: 20px;
+    color: #fff;
+}
+
+.panel {
+    background-color: #303030;
+    color: #fff;
+    margin-bottom: 4px;
+    overflow: hidden;
+}
+
+.panel>p {
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.panel-closed {
+    max-height: 0;
+    overflow: hidden;
+    width: 150%;
+    transform: translate(-16%);
+}
+
+.panel-open {
+    max-height: 700px;
+    width: 150%;
+    transform: translate(-16%);
+}
+
+/* active class for accordion, adds the "cross sign (x)" */
+.accordion-active::after {
+    content: "\274C";
+}
+
+.panel {
+    transition: max-height .33s cubic-bezier(.5, 0, .1, 1);
 }
 
 <style>.tab-6-1 {
