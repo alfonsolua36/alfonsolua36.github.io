@@ -765,3 +765,14 @@ button {
 }
 
 </style>
+/* footer */
+
+.footerfoot {
+    /*  position: fixed;*/
+    left: 0;
+    bottom: 0;
+    width: 560%;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+}
